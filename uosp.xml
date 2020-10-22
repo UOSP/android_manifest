@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build -->
+  <project path="build/make" name="android_build" remote="uosp" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="uosp" groups="pdk,tradefed" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="bionic" name="android_bionic" remote="uosp" />
+
+  <!-- External -->
+  <project path="external/selinux" name="android_external_selinux" remote="uosp" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="uosp" /> 
+
+  <!-- frameworks -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="uosp" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="uosp" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="uosp" />
+
+  <!--hardware-->
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="uosp" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="android_manifest"  remote="uosp" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="uosp" />
+
+  <!-- system -->
+  <project path="system/core" name="android_system_core" remote="uosp" />
+
+</manifest>

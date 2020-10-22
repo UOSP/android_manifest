@@ -850,4 +850,9 @@
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
+ <!-- Remove unused AOSP repos -->
+ <include name="remove.xml" />
+
+ <!-- Include UOSP Repos -->
+ <include name="uosp.xml" />
 </manifest>
