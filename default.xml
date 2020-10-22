@@ -2,11 +2,22 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-11.0.0_r8"
            remote="aosp"
            sync-j="4" />
+
+  <!-- UOSP -->
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote name="uosp"
+           fetch="https://github.com/UOSP/" 
+           revision="Eleven" />
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
