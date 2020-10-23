@@ -855,4 +855,5 @@
 
  <!-- Include UOSP Repos -->
  <include name="uosp.xml" />
+ <include name="temp.xml" />
 </manifest>
