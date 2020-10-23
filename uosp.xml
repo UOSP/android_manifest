@@ -43,6 +43,11 @@
   <!-- Prebuilts -->
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="uosp" />
 
+  <!-- Sepolicy -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="uosp" revision="Eleven" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="uosp" revision="Eleven-legacy-um" />
+  <project path="device/uosp/sepolicy" name="android_device_uosp_sepolicy" remote="uosp" />
+
   <!-- system -->
   <project path="system/core" name="android_system_core" remote="uosp" />
 
