@@ -28,6 +28,7 @@
 
   <!--hardware-->
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="uosp" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="uosp" />
 
   <!-- Manifest -->
   <project path="manifest" name="android_manifest"  remote="uosp" />
