@@ -856,4 +856,5 @@
  <!-- Include UOSP Repos -->
  <include name="uosp.xml" />
  <include name="temp.xml" />
+ <include name="lineage.xml" />
 </manifest>
