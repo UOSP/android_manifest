@@ -76,6 +76,7 @@
   <!-- external -->
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/chromium-webview" />
 
   <!-- Framework -->
   <remove-project name="platform/frameworks/base" />
@@ -84,6 +85,7 @@
 
   <!-- system -->
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/vold" />
    
   <!-- packages -->
   <remove-project name="platform/packages/apps/QuickSearchBox" />
@@ -93,6 +95,8 @@
   <remove-project name="platform/packages/apps/ThemePicker" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
+
 
   <!-- Prebuilts -->
   <remove-project name="kernel/prebuilts/4.19/arm64" />
